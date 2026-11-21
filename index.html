@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:cornflowerblue;
+            text-align: center;
+
+        }
+        input{
+            margin-top: 200px;
+            font-size: 40px;
+            text-align: center;
+            border: none;
+            background-color: rgb(170, 200, 255);
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            
+        }
+        button{
+            font-size: 30px;
+            margin-left: 25px;
+            border: none;
+            background-color:  rgb(170, 200, 255);
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        p{
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+            font-weight: bold;
+            
+        }
+        h1{
+            color: white;
+            margin-top: 100px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>LOWERCASE TO UPPERCASE</h1>
+
+<input type="text" id="text" placeholder="Enter Text">
+<button onclick="convert()">Convert</button>
+<br>
+<p id="result"></p>
+
+
+<script>
+  function convert() {
+    const text = document.getElementById("text").value;
+    document.getElementById("result").textContent = text.toUpperCase();
+  }
+  
+</script>
+</body>
+</html>
+</body>
+</html>
